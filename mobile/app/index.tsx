@@ -33,11 +33,11 @@ export default function Home() {
         <View className="bg-red-500">
           <CameraView style={styles.camera} facing={facing} />
         </View>
-        <View className="width-full flex-row bg-blue-500 px-16">
-          <Pressable className="flex-1 items-center" onPress={toggleCameraFacing}>
-            <Text style={styles.text}>Flip Camera</Text>
-          </Pressable>
-        </View>
+      </View>
+      <View className="width-full z-10 flex-row bg-blue-500 px-16">
+        <Pressable className="flex-1 items-center" onPress={toggleCameraFacing}>
+          <Text style={styles.text}>Flip Camera</Text>
+        </Pressable>
       </View>
     </Screen>
   );
